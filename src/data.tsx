@@ -28,12 +28,12 @@ export const headerData = {
 
 export const navData = {
 	items: [
-		{ href: '/', name: 'Home' },
-		{ href: '/', name: 'About' },
-		{ href: '/', name: 'Gallery' },
+		{ href: '/', name: 'Inicio' },
+		{ href: '/', name: 'Sobre' },
+		{ href: '/', name: 'Galeria' },
 		{ href: '/', name: 'Interview' },
 		{ href: '/', name: 'Articles' },
-		{ href: '/', name: 'Contact' },
+		{ href: '/', name: 'Contato' },
 	],
 };
 
@@ -54,17 +54,17 @@ export const heroData = {
 };
 
 export const aboutData = {
-	title: 'My Story:',
+	title: 'Minha trajetória:',
 	subtitle1:
 		'In velit arcu posuere integer. Dolor sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus hac vel ante sit sed scelerisque praesent duis volutpat laoreet.',
 	subtitle2:
 		'Nisl, sit molestie commodo congue. Etiam lectus risus in amet. Commodo molestie fames etiam aenean sed. Pellentesque et venenatis amet, tellus hac vel adipiscing sit. Placerat vitae nisl viverra faucibus tincidunt habitasse amet. Nunc, velit nunc, scelerisque imperdiet nunc.',
-	btnText: 'Know more',
+	btnText: 'Saiba mais',
 	btnIcon: <IoMdArrowForward />,
 };
 
 export const galleryData = {
-	title: 'Check my gallery:',
+	title: 'Veja minha Galeria:',
 	btnText: 'View all',
 	btnIcon: <IoMdArrowForward />,
 	images: [
