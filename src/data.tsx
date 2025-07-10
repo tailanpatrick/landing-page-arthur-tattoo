@@ -65,7 +65,7 @@ export const aboutData = {
 
 export const galleryData = {
 	title: 'Veja minha Galeria:',
-	btnText: 'View all',
+	btnText: 'Ver todas',
 	btnIcon: <IoMdArrowForward />,
 	images: [
 		{
