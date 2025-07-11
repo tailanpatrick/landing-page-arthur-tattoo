@@ -43,6 +43,7 @@ const GallerySection = () => {
 				whileInView={'show'}
 				viewport={{ once: false, amount: 0.2 }}
 				className="mb-8 lg:mb-20"
+				id="gallery"
 			>
 				<PhotoAlbum
 					onClick={(event, photo, index) => setIndex(index)}

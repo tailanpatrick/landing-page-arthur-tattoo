@@ -28,10 +28,10 @@ export const headerData = {
 
 export const navData = {
 	items: [
-		{ href: '/', name: 'Inicio' },
-		{ href: '/', name: 'Sobre' },
-		{ href: '/', name: 'Galeria' },
-		{ href: '/', name: 'Interview' },
+		{ href: '#hero', name: 'Inicio' },
+		{ href: '#about', name: 'Sobre' },
+		{ href: '#gallery', name: 'Galeria' },
+		{ href: '/#interview', name: 'No Estúdio' },
 		{ href: '/', name: 'Articles' },
 		{ href: '/', name: 'Contato' },
 	],
