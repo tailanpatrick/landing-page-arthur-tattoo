@@ -120,8 +120,8 @@ export const galleryData = {
 };
 
 export const interviewData = {
-	title: '“Consider what you desire. Your tattoo artist will never tell you what tattoo to have.”',
-	btnText: 'Watch it now',
+	title: '“Sua pele, sua história. A gente só eterniza.”',
+	btnText: 'Assista agora',
 	btnIcon: <FaPlay />,
 };
 
