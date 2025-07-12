@@ -32,7 +32,6 @@ export const navData = {
 		{ href: '#about', name: 'Sobre' },
 		{ href: '#gallery', name: 'Galeria' },
 		{ href: '/#interview', name: 'No Estúdio' },
-		{ href: '/', name: 'Articles' },
 		{ href: '/', name: 'Contato' },
 	],
 };
