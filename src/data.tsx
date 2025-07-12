@@ -142,50 +142,32 @@ export const testimonialData = [
 ];
 
 export const contactData = {
-	title: 'Get in touch with me:',
+	title: 'Entre em contato comigo:',
 	info: [
 		{
-			title: 'LA office',
+			title: 'Estúdio',
 			subtitle:
-				'In velit arcu posuere integer sit amet, consectetur nun adipiscing elit. Duis porttitor massa tellus',
+				'Se você tem uma ideia, dúvida ou quer agendar sua tatuagem, estou à disposição para conversar.',
 			address: {
 				icon: <FaMapMarkerAlt />,
-				name: '784 Norman Street, Los Angeles',
+				name: 'Av. Universo, 747 - Copacabana, Belo Horizonte - MG, 31540-550',
 			},
 			phone: {
 				icon: <FaPhoneAlt />,
-				number: '+49 93 30493943',
+				number: '+55 (31) 9351-4090',
 			},
 			email: {
 				icon: <FaEnvelope />,
 				address: 'contact@yourcompany.com',
 			},
-			link: 'Get location',
-		},
-		{
-			title: 'NYC office',
-			subtitle:
-				'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
-			address: {
-				icon: <FaMapMarkerAlt />,
-				name: '1630 Elm Drive, New York City',
-			},
-			phone: {
-				icon: <FaPhoneAlt />,
-				number: '+49 34 36573355',
-			},
-			email: {
-				icon: <FaEnvelope />,
-				address: 'contact@yourcompany.com',
-			},
-			link: 'Get location',
+			link: 'Ver no Maps',
 		},
 	],
 	form: {
-		name: 'Write your name here',
-		email: 'Write your email address',
-		message: 'Write your messages here',
-		btnText: 'Send it',
+		name: 'Digite seu nome aqui',
+		email: 'Digite seu email',
+		message: 'Escreva sua menssagem',
+		btnText: 'Enviar Menssagem via Whatsapp',
 	},
 };
 
