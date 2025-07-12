@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FormEvent, useState } from 'react';
 
 import { contactData } from '../data';
 
@@ -7,6 +7,26 @@ import { fadeIn } from '../variants';
 
 const Contact = () => {
 	const { form, info, title } = contactData;
+
+	const [name, setName] = useState('');
+	const [message, setMessage] = useState('');
+	const phoneNumber = '3193514090';
+
+	const handleWhatsapp = (e: FormEvent) => {
+		e.preventDefault();
+
+		const finalMessage =
+			message === ''
+				? 'Olá, vi seu portifólio, gostaria de conversar sobre uma tatoo que quero fazer. '
+				: message;
+
+		window.open(
+			`https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+				`*Nome: ${name || 'Não informado'}*\n\n${finalMessage}`
+			)}`,
+			'_blank'
+		);
+	};
 
 	return (
 		<section className="section ">
@@ -73,16 +93,24 @@ const Contact = () => {
 						viewport={{ once: false, amount: 0.4 }}
 						className="flex-1 xl:pl-[40px] flex justify-center items-center"
 					>
-						<form className="flex flex-col w-full gap-y-5">
+						<form
+							className="flex flex-col w-full gap-y-5"
+							onSubmit={handleWhatsapp}
+						>
 							<input
 								className="w-full border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4"
 								placeholder={form.name}
 								type="text"
+								value={name}
+								onChange={(e) => setName(e.target.value)}
 							/>
+
 							<input
 								className="w-full border-b border-dark placeholder:text-[#555] italic tracking-[0.06em] outline-none pb-4"
 								placeholder={form.message}
 								type="text"
+								value={message}
+								onChange={(e) => setMessage(e.target.value)}
 							/>
 							<button className="btn btn-sm btn-dark self-start mt-4">
 								{form.btnText}
