@@ -41,10 +41,12 @@ const Hero = () => {
 					</motion.p>
 
 					<motion.div variants={fadeIn('down')}>
-						<button className="btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0">
-							{btnText}
-							<div>{btnIcon}</div>
-						</button>
+						<a href="#gallery">
+							<button className="btn btn-sm lg:btn-lg btn-outline mx-auto lg:mx-0">
+								{btnText}
+								<div>{btnIcon}</div>
+							</button>
+						</a>
 					</motion.div>
 				</div>
 
