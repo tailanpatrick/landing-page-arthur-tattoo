@@ -47,8 +47,8 @@ export const socialData = [
 export const heroData = {
 	title: 'Prazer, Arthur Tattoo. ⭑',
 	subtitle:
-		'Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.',
-	btnText: 'saiba mais',
+		'Cada tatuagem conta uma história única. Deixe sua marca com um trabalho feito com paixão, técnica e personalidade.',
+	btnText: 'veja a galeria',
 	btnIcon: <IoMdArrowForward />,
 };
 
