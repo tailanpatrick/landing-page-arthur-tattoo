@@ -29,7 +29,7 @@ const Contact = () => {
 	};
 
 	return (
-		<section className="section ">
+		<section className="section " id="contact">
 			<div className="container mx-auto">
 				<div className="flex flex-col xl:flex-row gap-y-10 w-full">
 					<motion.div
@@ -112,7 +112,7 @@ const Contact = () => {
 								value={message}
 								onChange={(e) => setMessage(e.target.value)}
 							/>
-							<button className="btn btn-sm btn-dark self-start mt-4">
+							<button className="btn btn-sm btn-dark self-start mt-4 py-4">
 								{form.btnText}
 							</button>
 						</form>
