@@ -32,7 +32,7 @@ export const navData = {
 		{ href: '#about', name: 'Sobre' },
 		{ href: '#gallery', name: 'Galeria' },
 		{ href: '/#interview', name: 'No Estúdio' },
-		{ href: '/', name: 'Contato' },
+		{ href: '#contact', name: 'Contato' },
 	],
 };
 
@@ -173,9 +173,8 @@ export const contactData = {
 
 export const footerData = {
 	about: {
-		title: 'About void tattoo',
-		subtitle:
-			'Sit amet, consectetur nun in velit arcu posuere integer. Adipiscing elit duis porttitor massa tellus',
+		title: 'Arthur Tattoo',
+		subtitle: 'Tatuagens autorais com estilo e personalidade.',
 		address: {
 			icon: <FaMapMarkerAlt />,
 			name: '1630 Elm Drive, New York City',
@@ -190,12 +189,12 @@ export const footerData = {
 		},
 	},
 	links: {
-		title: 'Useful links',
+		title: 'Links Úteis',
 		items: [
-			{ href: '/', name: 'About me' },
-			{ href: '/', name: 'My gallery' },
-			{ href: '/', name: 'My services' },
-			{ href: '/', name: 'Contact me' },
+			{ href: '#about', name: 'Sobre mim' },
+			{ href: '/', name: 'Galeria' },
+			{ href: '/#interview', name: 'No Estúdio' },
+			{ href: '#contact', name: 'Entre em Contato' },
 		],
 	},
 	program: {
