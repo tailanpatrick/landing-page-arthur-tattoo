@@ -22,7 +22,6 @@ const Interview = () => {
 			whileInView={'show'}
 			viewport={{ once: false, amount: 0.1 }}
 			className="bg-dark section bg-interview bg-no-repeat bg-cover bg-center lg:h-[812px]"
-			id="interview"
 		>
 			<div className="container mx-auto h-full ">
 				<div className="flex flex-col justify-center h-full">

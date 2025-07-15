@@ -12,7 +12,7 @@ const styles = {
 };
 
 const tattooStyles = [
-	{ label: 'OldㅤSchool', target: 90 },
+	{ label: 'Old School', target: 90 },
 	{ label: 'New School', target: 85 },
 	{ label: 'Realismo', target: 80 },
 	{ label: 'Blackwork', target: 75 },
@@ -59,11 +59,11 @@ const Skills = () => {
 			viewport={{ once: false, amount: 0.1 }}
 		>
 			<div className="container mx-auto my-12">
-				<div className="flex flex-col justify-between items-center gap-y-12 xl:flex-row xl:gap-[35px]">
+				<div className="grid grid-cols-2 md:grid-cols-8 gap-y-12 gap-x-6">
 					{tattooStyles.map((style, index) => (
 						<div
 							key={style.label}
-							className="w-[150px] lg:w-[275px] flex flex-col items-center gap-y-6"
+							className="flex flex-col items-center gap-y-6"
 						>
 							<CircularProgressbar
 								strokeWidth={1}
@@ -76,6 +76,7 @@ const Skills = () => {
 							</div>
 						</div>
 					))}
+					<div id="interview"></div>
 				</div>
 			</div>
 		</motion.section>

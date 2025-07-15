@@ -31,7 +31,7 @@ export const navData = {
 		{ href: '#hero', name: 'Inicio' },
 		{ href: '#about', name: 'Sobre' },
 		{ href: '#gallery', name: 'Galeria' },
-		{ href: '/#interview', name: 'No Estúdio' },
+		{ href: '#interview', name: 'No Estúdio' },
 		{ href: '#contact', name: 'Contato' },
 	],
 };
