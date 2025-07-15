@@ -23,7 +23,10 @@ const GallerySection = () => {
 	const { title, images, btnIcon, btnText } = galleryData;
 
 	return (
-		<section className="bg-[#f9f9f9] section relative mt-[40px] lg:mt-0">
+		<section
+			className="bg-[#f9f9f9] section relative mt-[40px] lg:mt-0"
+			id="gallery"
+		>
 			<div className="container mx-auto">
 				<motion.h2
 					variants={fadeIn('up')}
@@ -43,7 +46,6 @@ const GallerySection = () => {
 				whileInView={'show'}
 				viewport={{ once: false, amount: 0.2 }}
 				className="mb-8 lg:mb-20"
-				id="gallery"
 			>
 				<PhotoAlbum
 					onClick={(event, photo, index) => setIndex(index)}
