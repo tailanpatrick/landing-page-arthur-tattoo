@@ -54,7 +54,7 @@ const Header = () => {
 							: 'top-[120px] lg:top[150px]'
 					} fixed bg-white w-full h-full left-0 -z-10 transition-all duration-300`}
 				>
-					<NavMobile />
+					<NavMobile setNavMobile={setNavMobile} />
 				</div>
 
 				{/* Social icons  - mostra em desktop*/}

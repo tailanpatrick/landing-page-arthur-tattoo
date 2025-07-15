@@ -4,7 +4,11 @@ import { navData } from '../data';
 
 import Socials from './Socials';
 
-const NavMobile = () => {
+type NavMobileProps = {
+	setNavMobile: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const NavMobile = ({ setNavMobile }: NavMobileProps) => {
 	const { items } = navData;
 
 	return (
@@ -15,6 +19,7 @@ const NavMobile = () => {
 						<a
 							className="text-2xl font-primary uppercase"
 							href={item.href}
+							onClick={() => setNavMobile(false)}
 						>
 							{item.name}
 						</a>
