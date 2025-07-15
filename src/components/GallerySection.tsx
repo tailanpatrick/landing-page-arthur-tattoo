@@ -71,11 +71,7 @@ const GallerySection = () => {
 				whileInView={'show'}
 				viewport={{ once: false, amount: 0.2 }}
 				className="flex justify-center"
-			>
-				<button className="btn btn-lg btn-dark">
-					{btnText} <div className="text-xl">{btnIcon}</div>
-				</button>
-			</motion.div>
+			></motion.div>
 		</section>
 	);
 };
