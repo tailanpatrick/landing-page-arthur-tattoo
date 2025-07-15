@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 // import components
 import Hero from './components/Hero';
@@ -12,9 +12,19 @@ import Footer from './components/Footer';
 import Copyright from './components/Copyright';
 
 const App = () => {
+	const [navMobile, setNavMobile] = useState(false);
+
+	useEffect(() => {
+		if (navMobile) {
+			document.body.classList.add('overflow-hidden');
+		} else {
+			document.body.classList.remove('overflow-hidden');
+		}
+	}, [navMobile]);
+
 	return (
 		<div className="max-w-[1920px] mx-auto overflow-hidden bg-white">
-			<Header />
+			<Header navMobile={navMobile} setNavMobile={setNavMobile} />
 			<Hero />
 			<About />
 			<GallerySection />

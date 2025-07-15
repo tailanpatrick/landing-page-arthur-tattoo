@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, SetStateAction, Dispatch } from 'react';
 
 import { headerData } from '../data';
 
@@ -8,11 +8,15 @@ import Socials from './Socials';
 
 import { TiThMenuOutline } from 'react-icons/ti';
 
-const Header = () => {
+interface HeaderProps {
+	navMobile: boolean;
+	setNavMobile: Dispatch<SetStateAction<boolean>>;
+}
+
+const Header = ({ navMobile, setNavMobile }: HeaderProps) => {
 	const { logo } = headerData;
 
 	const [isActive, setIsActive] = useState(false);
-	const [navMobile, setNavMobile] = useState(false);
 
 	// scroll event
 	useEffect(() => {
